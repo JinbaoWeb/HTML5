@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>实战</title>
+	<style type="text/css">
+		/*字体设置*/
+		@font-face{
+			font-family: Raleway;
+			src:url(raleway_thin.eot);
+			src:local(raleway_thin),url(raleway_thin.ttf) format(opentype);
+		}
+		body{
+			width: 700px;
+			margin:0 auto;
+			padding: 29px;
+			border-top: none;
+			font:82%/1.4 Verdana,Arial,Helvetica,sans-serif;
+		}
+		h1{
+			float: left;
+			margin-top: 0;
+			font-family: Raleway,Georgia,Times,Times New Roman,serif;
+		}
+		h2,h3{
+			font-family: Georgia,Times,Times New Roman,serif;
+		}
+		header{
+			border-bottom:6px solid #233;
+		}
+		header .intro{
+			clear: both;
+			font-weight: bold;
+		}
+		.intro{
+			font-style: italic;
+		}
+		.navigation{
+			float: right;
+			margin: 0;
+			list-style: none;
+		}
+		.navigation li{
+			float: left;
+		}
+		.navigation a{
+			display: block;
+			margin-left: 0.5em;
+			padding: 0.5em;
+			border: 1px solid #CCC;
+			text-decoration: none;
+		}
+		.navigation a:focus,.navigation a:hover{
+			background: #233;
+			color: #FFF;
+		}
+		.instructions{
+			float: left;
+			width: 60%;
+		}
+		.instructions h3{
+			margin-top: 0;
+		}
+		.ingredients{
+			float: right;
+			margin:0 0 15px 15px;
+			padding-left: 15px;
+			border-left: 1px solid #CCC;
+			width: 30%;
+		}
+		.ingredients h3{
+			margin-top: 0;
+		}
+		.ingredients th{
+			text-align: center;
+		}
+		.ingredients th,.ingredients td{
+			padding:2px 5px;
+		}
+		.ingredients .ingredient{
+			background-color: #CC5;
+		}
+		.ingredients .quantity{
+			background-color: #CCF;
+		}
+		.ingredients thead td{
+
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Recipes for Cheese</h1>
+		<ul class="navigation">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Recipes</a></li>
+			<li><a href="#">Suggestions</a></li>
+		</ul>
+		<p class="intro">Cheese is a remarkably versatile food, available in literally hundreds of varieties with different flavors and textures.</p>
+	</header>
+	<article>
+		<section>
+			<h2>Welsh Rarebit</h2>
+			<p class="intro">Welsh Rarebit is a savory dish made from melted cheese, often Cheddar, on toasted bread, and a variety of other ingredients such as mustard, egg, or bacon. Here is one take on this classic.</p>
+		</section>
+		<section>
+			<div class="instructions">
+				<h3>Instructions</h3>
+				<ol>
+					<li>Lightly toast the bread</li>
+					<li>Place on a baking tray, and spread with butter.</li>
+					<li>Add the grated Cheddar cheese and 2 tablespoons of beer to a saucepan. Place the saucepan over a medium heat, and stir the cheese continuously until it has melted. Add a teaspoon of wholegrain mustard and grind in a little pepper. Keep stirring.</li>
+					<li>When thick and smooth, pour over each piece of toast spreading it to the edges to stop the toast from burning.</li>
+					<li>Place under the grill for a couple of minutes or until golden brown.</li>
+				</ol>
+			</div>
+		</section>
+		<section>
+			<div class="ingredients">
+				<h3>Ingredients</h3>
+				<table>
+					<colgroup>
+						<col class="ingredient">
+						<col class="quantity">
+					</colgroup>
+					<thead>
+						<tr>
+							<td>Ingredient</td>
+							<td>Quantity</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Bread</td>
+							<td>2 medium slices</td>
+						</tr>
+						<tr>
+							<td>Butter</td>
+							<td>For bread</td>
+						</tr>
+						<tr>
+							<td>Grated Cheddar</td>
+							<td>1.5 handfuls</td>
+						</tr>
+						<tr>
+							<td>Beer</td>
+							<td>One splash</td>
+						</tr>
+						<tr>
+							<td>Wholegrain mustard</td>
+							<td>One dollop</td>
+						</tr>
+						<tr>
+							<td>Pepper</td>
+							<td>To taste</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</article>
+</body>
+</html>

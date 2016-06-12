@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title>HTML5表单显示验证</title>
+  <script type="text/javascript">
+  function check()
+  {
+    var email=document.getElementById("email");
+    if (email.value=="")
+    {
+      alert("请输入email地址");
+      return false;
+    }
+    else if (!email.checkValidity())
+      alert("请输入正确的Email地址");
+    else
+      alert("您输入的Email地址有效！");
+  }
+  </script>
+</head>
+<body>
+  <form id="testform" onsubmit="return check();">
+    <label for="email">Email</label>
+    <input name="email" id="email" type="email" />
+    <input type="submit">
+  </form>
+  <br />
+  <details>
+    <summary>HTML5</summary>
+    <p>
+      <details>
+        <summary>HTML</summary>
+        <p>超文本标记语言</p>
+      </details>
+    </p>
+  </details>
+</body>
+</html>

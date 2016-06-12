@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <title>progress元素</title>
+  <script>
+    function btn(){
+      var i=0;
+      function thread_one(){
+        if (i<100){
+          i++;
+          updateprogress(i);
+        }
+      }
+      setInterval(thread_one,100);
+    }
+    function updateprogress(newValue){
+      var progressBar=document.getElementById("p");
+      progressBar.vale=newValue;
+      progressBar.getElementByTagName("span")[0].textContent=newValue;
+    }
+  </script>
+</head>
+<body>
+  <section>
+    <h2>progress元素的使用</h2>
+    <p>进度<progress style="background-color:red" id="p" max="100"><span>0</span>%</progress></p>
+    <input type="button" onclick="btn()" value="提交">
+  </section>
+</body>
+</html>
